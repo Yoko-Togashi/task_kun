@@ -32,10 +32,9 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 20), // 隙間
               // 2. ウロウロするキャラクター（Lottieアニメーション）[cite: 1, 2]
               Lottie.asset(
-                'assets/json/walk.json', // 読み込むJSONファイル[cite: 1, 2]
-                width: 250, // 横幅[cite: 1]
-                height: 250, // 高さ[cite: 1]
-                fit: BoxFit.contain, // 枠内での収まり方[cite: 1]
+                'assets/json/bounce.json', // 読み込むJSONファイル[cite: 1, 2]
+                width: double.infinity, // 👈 画面の端から端まで横幅をいっぱいに広げる
+                fit: BoxFit.cover, // 枠内での収まり方[cite: 1]
                 repeat: true, // ループ再生（ウロウロさせる）[cite: 1, 2]
               ),
             ],
